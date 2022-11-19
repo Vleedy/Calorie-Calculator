@@ -7,6 +7,16 @@
     margin: 0 auto
     margin-top: 15vh
     box-shadow: 7px 7px 20px 1px rgb(0 0 0 / 30%)
+    @media (max-width: 1100px) 
+        width: 80%
+        min-height: 60vh
+        margin-top: 10vh
+        margin-bottom: 10vh
+    @media (max-width: 900px) 
+        margin-top: 2vh
+        margin-bottom: 5vh
+
+
     h1
         font-size: 30px
         text-align: center
@@ -19,6 +29,14 @@
         display: flex 
         width: 80% 
         justify-content: space-between
+        @media (max-width: 750px) 
+            display: flex 
+            flex-direction: column
+            justify-content: center
+        .TextField
+            @media (max-width: 750px) 
+                margin-top: 15px
+
     .choose_parametrs
         margin: 0 auto
         display: flex 
@@ -26,12 +44,23 @@
         justify-content: space-between
         align-items: center
         margin-top: 5vh
+        @media (max-width: 750px) 
+            display: flex 
+            flex-direction: column
+            justify-content: center
+            margin-top: 15px
+
         .sex
-            width: 208px
+            width: 28.5%
             height: 56px 
+            @media (max-width: 750px) 
+                width: 100%
         .activity
-            width: 472px
+            width: 64.2%
             height: 56px 
+            @media (max-width: 750px) 
+                width: 100%
+                margin-top: 15px
     .results
         width: 80%
         margin: 0 auto
@@ -40,10 +69,12 @@
             font-weight: normal
             margin: 0
             padding-bottom: 2vh
+            @media (max-width: 900px) 
+                padding-bottom: 0px
             span 
                 font-weight: bold
                 
-
-
+  
+  
 
 

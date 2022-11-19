@@ -6,6 +6,8 @@
     position: absolute
     top: 0
     z-index: 9
+    @media ( max-width: 750px)
+        background: none 
     .modal
         width: 40%
         min-height: 50vh
@@ -17,6 +19,9 @@
         display: flex
         flex-direction: column
         position: relative
+        @media ( max-width: 750px)
+            width: 80%
+            
         ul
             padding: 5px 20px
             li

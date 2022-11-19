@@ -49,8 +49,8 @@ function App() {
         <h1>Рассчитайте вашу потребность в калориях</h1>
         <div className="input_wrapper">
           <TextField type='number' value={age} onChange={(e)=>setAge(e.target.value)} id="outlined-basic" label="Введите ваш возраст" color="secondary" variant="outlined" />
-          <TextField type='number' value={height} onChange={(e)=>setHeight(e.target.value)} id="outlined-basic" label="Введите ваш рост" color="secondary" variant="outlined" />
-          <TextField type='number' value={weight} onChange={(e)=>setWeight(e.target.value)} id="outlined-basic" label="Введите ваш вес" color="secondary" variant="outlined" />
+          <TextField className='TextField' type='number' value={height} onChange={(e)=>setHeight(e.target.value)} id="outlined-basic" label="Введите ваш рост" color="secondary" variant="outlined" />
+          <TextField className='TextField' type='number' value={weight} onChange={(e)=>setWeight(e.target.value)} id="outlined-basic" label="Введите ваш вес" color="secondary" variant="outlined" />
         </div>
         <div className="choose_parametrs">
             <FormControl className='sex'>
