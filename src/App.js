@@ -81,8 +81,8 @@ function App() {
         </div>
         <div className="results">
           <h2>Ваша суточная энергетическая потребность: <span>{Number(result).toFixed()}</span> ккал .</h2>
-          <h2>При этом ваш <Button onClick={()=>setModalBmr(true)} style={{color:'#cfecd0', fontSize:'24px'}}  variant="text">BMR</Button> составил: <span>{Number(bmr).toFixed()}</span> ккал .</h2>
-          <h2>Узнать больше можно  <Button onClick={()=>setModalMore(true)} style={{color:'#cfecd0', fontSize:'24px', textTransform: 'lowercase'}} variant="text">здесь</Button>.</h2>
+          <h2>При этом ваш <Button className='modal_btn' onClick={()=>setModalBmr(true)}   variant="text">BMR</Button> составил: <span>{Number(bmr).toFixed()}</span> ккал .</h2>
+          <h2>Узнать больше можно   <Button className='modal_btn' onClick={()=>setModalMore(true)} variant="text">здесь</Button>.</h2>
         </div>
       </div>
     {modalBmr&&<Modal onCrossModal={()=>setModalBmr(false)}/>}
